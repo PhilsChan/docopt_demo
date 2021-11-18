@@ -13,6 +13,10 @@ Options:
 
 from docopt import docopt
 opt = docopt(__doc__)
-print(opt)
-print(type(opt))
-print(opt["<pos_arg>"])
+def main():
+  print(opt)
+  print(type(opt))
+  print(opt["<pos_arg>"])
+
+if __name__ == '__main__':
+  main()
