@@ -13,6 +13,11 @@ Options:
 
 library(docopt)
 opt <- docopt(doc)
-print(opt)
-print(typeof(opt))
-print(opt$pos_arg)
+
+main <- function() {
+  print(opt)
+  print(typeof(opt))
+  print(opt$pos_arg)
+}
+
+main()
